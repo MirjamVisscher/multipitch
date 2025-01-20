@@ -123,7 +123,7 @@ def main():
 
         fs = 22050
         if input_type == 'file':
-            recordings = [path]  # Directly use the file path # changeID 15
+            audiofiles = [path]  # Directly use the file path # changeID 15
         else:  # input_type == 'folder'
             output_path = os.path.join(basepath, 'output', 'predictions', experiment, model_name) # changeID 4
             os.makedirs(output_path, exist_ok=True)
