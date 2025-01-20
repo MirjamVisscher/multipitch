@@ -10,7 +10,7 @@ start_time=$(date +%s)
 # Load environment variables and activate conda environment
 source ~/.bashrc || { echo "Failed to source .bashrc"; exit 1; }
 conda activate multipitch_gpu || { echo "Failed to activate conda environment"; exit 1; }
-export CUDA_VISIBLE_DEVICES=3
+#export CUDA_VISIBLE_DEVICES=3
 # Change to the working directory
 cd /storage/scratch/vissc022/multipitch-gpu || { echo "Failed to change directory"; exit 1; }
 
