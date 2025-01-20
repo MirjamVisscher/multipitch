@@ -1,0 +1,4 @@
+bash_script.sh
+/output
+*.out
+*.err

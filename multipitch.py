@@ -18,7 +18,6 @@ from libdl.data_loaders import dataset_context
 from libdl.nn_models import simple_u_net_polyphony_classif_softmax, deep_cnn_segm_sigmoid
 from torchinfo import summary
 
-import torch # changeID 2
 print("torch cuda is available" + str(torch.cuda.is_available()))  # changeID 2
 print(torch.cuda.device_count())  # changeID 2
 if not torch.cuda.is_available(): # changeID 8
@@ -124,7 +123,7 @@ def main():
 
         fs = 22050
         if input_type == 'file':
-            recordings = [path]  # Directly use the file path
+            recordings = [path]  # Directly use the file path # changeID 15
         else:  # input_type == 'folder'
             output_path = os.path.join(basepath, 'output', 'predictions', experiment, model_name) # changeID 4
             os.makedirs(output_path, exist_ok=True)
