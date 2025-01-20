@@ -178,9 +178,9 @@ def main():
                 for test_batch, test_labels in test_generator:
                     test_batch = test_batch.to(device) # changeID 7
                     if k == 1:
-                        print('frame ' + str(k) + ' ' + recording)
+                        print('batch ' + str(k) + ' ' + recording)
                     if k % 10 == 0:
-                        print('frame ' + str(k) + ' ' + recording)
+                        print('batch ' + str(k) + ' ' + recording)
                     k += 1
                     if model_name == '195f':
                         y_pred, n_pred = model(test_batch)
